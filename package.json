@@ -1,0 +1,25 @@
+{
+  "name": "data_relationships_with_mongo",
+  "version": "1.0.0",
+  "description": "\u0016\u0002\u0016Sample project to learn how data relationships works in Mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NahomKibreab/Data_Relationships_With_Mongo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NahomKibreab/Data_Relationships_With_Mongo/issues"
+  },
+  "homepage": "https://github.com/NahomKibreab/Data_Relationships_With_Mongo#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7"
+  }
+}
