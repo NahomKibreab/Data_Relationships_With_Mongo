@@ -62,4 +62,17 @@ const addFarm = async () => {
   console.log(await farm.save());
 };
 
-addFarm();
+const addProduct = async () => {
+  const farm = await Farm.findOne({ name: 'Alebu Farm' });
+  const product = await Product.findOne({ name: 'Water Melon' });
+  farm.products.push(product);
+  await farm.save();
+};
+
+addProduct();
+
+Farm.findOne({ name: 'Alebu Farm' })
+  .populate('products')
+  .then((farm) => {
+    console.log(farm);
+  });
